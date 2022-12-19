@@ -16,23 +16,29 @@ class Signin extends React.Component {
 	  this.setState({signInPassword: event.target.value})
 	}
 
-	onSubmitSignIn = () => {
-		fetch('https://glacial-ridge-56560.herokuapp.com/signin', {
-	      method: 'post',
-	      headers: {'Content-Type': 'application/json'},
-	      body: JSON.stringify({
-        	email: this.state.signInEmail,
-       	 	password: this.state.signInPassword
-		    })
-		})
-			.then(response => response.json())
-            .then(user => {
-      		  if(user.id){ // does the user exist? Did we receive a user with a property of id?
-          		this.props.loadUser(user);
-          		this.props.onRouteChange('home');
-        }
-      })
+	saveAuthTokenInSession = (token) => {
+		window.sessionStorage.setItem('token',token);
 	}
+
+	onSubmitSignIn = () => {
+		fetch('http://localhost:3000/signin', {
+		  method: 'post',
+		  headers: {'Content-Type': 'application/json'},
+		  body: JSON.stringify({
+			email: this.state.signInEmail,
+			password: this.state.signInPassword
+		  })
+		})
+		  .then(response => response.json())
+		  .then(data => {
+			if (data && data.success === "true") {
+			  this.saveAuthTokenInSession(data.token)
+			  this.props.loadUser(data.user)
+			  this.props.onRouteChange('home');
+			}
+		  })
+		  .catch(console.log)
+	  }
 
 	render(){
 		const { onRouteChange } = this.props;
