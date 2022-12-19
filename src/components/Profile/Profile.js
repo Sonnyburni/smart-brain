@@ -29,7 +29,8 @@ class Profile extends React.Component{
     }
 
     onProfileUpdate = (data) => {
-        fetch(`http://localhost:3000/profile/${this.props.user.id}`, {
+        fetch(`https://glacial-ridge-56560.herokuapp.com/profile/${this.props.user.id}`, {
+        //fetch(`http://localhost:3000/profile/${this.props.user.id}`, {
             method: 'post',
             headers: {'Content-Type': 'application/json', Authorization:window.sessionStorage.getItem('token')},
             body: JSON.stringify({formInput: data})

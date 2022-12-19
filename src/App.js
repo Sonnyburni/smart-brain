@@ -39,7 +39,8 @@ class App extends Component {
   componentDidMount() {
     const token = window.sessionStorage.getItem('token');
     if (token) {
-      fetch('http://localhost:3000/signin', {
+      fetch('https://glacial-ridge-56560.herokuapp.com/signin', {
+      //fetch('http://localhost:3000/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -49,7 +50,8 @@ class App extends Component {
         .then(response => response.json())
         .then(data => {
           if (data && data.id) {
-            fetch(`http://localhost:3000/profile/${data.id}`, {
+            fetch(`https://glacial-ridge-56560.herokuapp.com/profile/${data.id}`, {
+            //fetch(`http://localhost:3000/profile/${data.id}`, {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',
@@ -110,10 +112,10 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-        fetch('http://localhost:3000/imageurl', { 
-      // fetch('https://glacial-ridge-56560.herokuapp.com/imageurl', {
+        //fetch('http://localhost:3000/imageurl', { 
+       fetch('https://glacial-ridge-56560.herokuapp.com/imageurl', {
         method: 'post',
-        headers: {'Content-Type': 'application/json',Authorization:window.sessionStorage.getItem('token')},
+        headers: {'Content-Type': 'application/json', Authorization:window.sessionStorage.getItem('token')},
         body: JSON.stringify({
           input: this.state.input
         })
@@ -121,7 +123,8 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://glacial-ridge-56560.herokuapp.com/image', {
+          //fetch('http://localhost:3000/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
