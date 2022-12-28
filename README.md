@@ -20,4 +20,4 @@ You can use the following test login details <i>(ensure lowercase as case sensit
 <br>
 <b>Password:</b> world
 <p>
- ![](login-details.png)
+ ![](./login-details.png)
