@@ -1,6 +1,8 @@
 # Smart Brain Client
 
-This repo contains the code for the client side of the full stack smart brain app. This app utlises a Clarifai face detection API to detect faces in multiple pictures. 
+A React App that detects, then highlights faces in web images. Including a user profile with image upload count and a Ranking Badge served from AWS Lambda as a serverless function.
+
+Built with React.js, Node.js, Express, Bcrypt, PostgreSQL, Redis, Tachyon CSS, Clarifai Face Detection API, and all running on Heroku Servers 'synched' with GitHub.
 
 ## Demo
 <div align="center">
