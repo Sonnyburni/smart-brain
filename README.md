@@ -6,10 +6,12 @@ Built with React.js, Node.js, Express, Bcrypt, PostgreSQL, Redis, Tachyon CSS, C
 
 Back-end Server Repo Link: https://github.com/Sonnyburni/smart-brain-api
 
-Thanks to Andrei Neagoie for creating the ZTM Web Developer Zero to Mastery and ZTM Junior to Senior Web Developer courses which SmartBrain is based on.
-
+<i>Thanks to Andrei Neagoie for creating the [ZTM Web Developer Zero to Mastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery) and [ZTM Junior to Senior Web Developer](https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/) courses which SmartBrain is based on.
+<br><br>
 Since completing both courses and further personal development I have also updated the SmartBrain app further extensively, adding numerous updates, bug fixes etc. With the fundamental update being to adapt it to run 100% remotely with Heroku hosting the site in tandem with PostgreSQL DB, Redis DB and AWS Lambda servers too.
 I have also implemented validation for both email and password fields on sign up.
+</i>
+</p><br>
 
 ## Demo
 <div align="center">
