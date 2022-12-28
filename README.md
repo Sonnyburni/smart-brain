@@ -2,6 +2,6 @@
 
 ## Demo
 
-🚀 View Live Demo 🚀
+:rocket: **[View Live Demo](https://sonny-smart-brain.herokuapp.com/)** :rocket:<br>
 
-![](face-detection-demo.gif = 250 x 250)
+![<img src="/images/output/video1.gif" width="250" height="250"/>](face-detection-demo.gif)
