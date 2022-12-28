@@ -19,5 +19,9 @@ You can use the following test login details <i>(ensure lowercase as case sensit
 <b>Email:</b> hello@world.com
 <br>
 <b>Password:</b> world
+<br>
 <p>
- ![](./login-details.png)
+  
+![](login-details.png) 
+<br>
+_**Please note: Site may take a few seconds to initially load due to using Heroku .**_
