@@ -64,6 +64,7 @@ Total Images Submitted | Current Rank 'Badge'
 <li>Multi-Face Detection using Clarifai Face Detection API</li>
 <br>
 <li>Ranking badge element served from external AWS Lambda as a serverless function</li>
+<br>
 <li>User authentication using JSON Web Tokens (JWT)</li>
 <br>
 <li>With a Redis Database for Token Management</li>
