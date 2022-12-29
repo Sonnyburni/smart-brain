@@ -36,3 +36,25 @@ You can use the following test login details <i>(ensure lowercase as case sensit
 ![](login-details.png) 
 <br>
 _**Please note: Site may take a few seconds to initially load due to using Heroku .**_
+
+Or you can click on the 'Register' tab and create your own new login details to use instead.
+
+Once logged in simply copy, then paste an image url from the web (example: https://i.natgeofe.com/n/a66a4e3e-ba36-4ca1-bfb3-a3751bfaf110/83704.jpg) into the search input field, then click the 'DETECT' button to run the Face Detection API.
+
+Each time you upload an image the 'Total Images Submitted' value is incremented by +1.
+You can view the current total in the 'View Profile' tab, along with the 'Current Rank 'Badge', which is fed from AWS Lambda as a serverless function.
+
+The Rank Badge updates based on the current image upload count.
+<br>
+Total Images Submitted | Current Rank 'Badge'
+------------ | -------------
+0 | 😐
+1 | 😃
+2 | 😀
+3 | 😊
+4 | 😉
+5 | 😍
+6 | 🔶
+7 | 🔷
+8 or over | 🚀
+<br>
