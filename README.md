@@ -58,3 +58,26 @@ Total Images Submitted | Current Rank 'Badge'
 7 | 🔷
 8 or over | 🚀
 <br>
+
+## Features
+<ul>
+<li>Multi-Face Detection using Clarifai Face Detection API</li>
+<br>
+<li>Ranking badge element served from external AWS Lambda as a serverless function</li>
+<li>User authentication using JSON Web Tokens (JWT)</li>
+<br>
+<li>With a Redis Database for Token Management</li>
+<br>
+<li>User profile with capture of image uploads, stored via a PostgreSQL Database</li>
+<br>
+<li>TS Particles for background animation</li>
+<br>
+<li>Parallax tilt for interactive site logo</li>
+<br>
+<li>Form validation</li>
+<br>
+<li>Bcrypt user password encryption/decryption to/from PostgreSQL Database</li>
+<br>
+<li>Editable user profile</li>
+<br>
+</p>
